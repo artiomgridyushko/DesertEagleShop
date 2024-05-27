@@ -168,7 +168,7 @@ const fetchData = async () => {
         </div>
         <div class="product__description_container">${moreDetails}</div>
         <div class="product__price_contianer">
-          <div class="product__price_container">${price} <span>&#8381;</span></div>
+          <div class="product__price_container">${price} <span>руб</span></div>
           <button type="button" class="product__add-basket_btn" id = "product__add-basket_btn"onclick="addbasketProductStorage('${img}','${title}','${price}')">Добавить в корзину</button>
         </div>
       </div>
@@ -428,6 +428,10 @@ const calculatePrice = (type, quantity, title) => {
     price = 18;
   }
 
+  if (title === 'Картидж Ditron') {
+    price = 10;
+  }
+
   if (title === 'Испаритель b-siries 0.2 om') {
     price = 14;
   }
@@ -450,7 +454,7 @@ const updatePriceOnChange = (event) => {
 
   // Обновляем цену на странице
   document.querySelectorAll('.product__price_container').forEach((priceContainer) => {
-    priceContainer.textContent = newPrice + ' ₽';
+    priceContainer.textContent = newPrice + ' руб';
   });
 };
 
