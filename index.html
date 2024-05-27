@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DesertEagle Shop</title>
+    <link rel="icon" type="image/png" href="/images/icons/logo_tittle1.png">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2Ces2016%2Ces2017%2Ces2018%2Ces2019%2Ces2020%2Ces2021%2Ces2022%2Ces5%2Ces6%2Ces7"></script>
+    <link rel="stylesheet" href="./css/styles1.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script>
+      // Загрузка данных из JSON файла
+      fetch('keywords.json')
+          .then(response => response.json())
+          .then(data => {
+              const keywords = data.keywords.join(', '); // Преобразование массива ключевых слов в строку
+              const metaKeywords = document.createElement('meta');
+              metaKeywords.name = 'keywords';
+              metaKeywords.content = keywords;
+              document.head.appendChild(metaKeywords);
+          })
+          .catch(error => console.error('Ошибка загрузки ключевых слов:', error));
+  </script>
+  <meta name="author" content="DesertEagle Shop">
+  <meta name="content-language" content="ru-RU">
+  <meta name="subject" content="DesertEagle Shop - молодая, но амбициозная компания, занимающаяся розничными продажами. ">
+  <meta name="description" content="DesertEagle Shop - молодая, но амбициозная компания, занимающаяся розничными продажами. На нашем счету всегда успешные сделки и положительные отзывов от довольных клиентов."> 
+  </head>
+  <body>
+    <header>
+      <div class="header-content" id="header">
+        <a href="#imagenavigation" onclick="ClickHomePage()">
+          <img src="./images/icons/logo1.png" alt="Your Image" class="header-image" />
+        </a>
+
+        <div class="header-mobil-container">
+          <a href="#imagenavigation" onclick="ClickHomePage()">
+            <img class="header-mobil-logo" src="./images/icons/logo1.png" alt="" />
+          </a>
+          <a href="#imagenavigation">
+            <span class="brand-title" onclick="ClickHomePage()">DesertEagle Shop</span>
+          </a>
+        </div>
+        <div class="header-actions">
+          <button class="cart">
+            <img
+              src="./images/icons/basket.svg"
+              alt="Корзина"
+              id="cart-image"
+              class="cart-imag"
+              onclick="openBasker()"
+            />
+            <div class="cart-count" id="cart">0</div>
+          </button>
+          <!-- модалка корзинки -->
+          <div class="basketModal" id="basketModal">
+            <img src="./images/icons/cross.png" alt="" class="clossBasket" id="clossBasket" onclick="closeBasker()" />
+            <div class="basketModal-container" id="basketModal-container"></div>
+          </div>
+
+          <div class="btn-Form-container">
+            <div class="mobil-burger-modal" id="mobil-burger-modal">
+              <div class="mobil-burger-modal-inner">
+                <img
+                  src="./images/icons/cross.png"
+                  alt="cross"
+                  class="mobil-burger-modal-cross"
+                  onclick="closeMobalBurger()"
+                />
+                <nav class="burger-modal-nav">
+                  <ul class="burger-modal-ul">
+                    <li class="burger-modal-li"><a href="#imagenavigation">Главная</a></li>
+                    <li class="burger-modal-li"><a href="#product">Каталог</a></li>
+                    <li class="burger-modal-li"><a href="#about-company">О компании</a></li>
+                    <li class="burger-modal-li"><a href="#reviews-wrapp">Отзывы</a></li>
+                    <li class="burger-modal-li"><a href="#footer-contact">Контакты</a></li>
+                  </ul>
+                </nav>
+                <div class="burger-modal-btn-container">
+                  <buttton class="burger-modal-btn" onclick="openForm()">Оставить заявку</buttton>
+                </div>
+              </div>
+            </div>
+            <button class="btn-FORM" id="openApplicationForm" onclick="openForm()">Оставить заявку</button>
+            <img
+              class="mobil-burger"
+              id="mobil-burger"
+              src="./images/icons/menu_bar.png"
+              alt=""
+              onclick="openMobalBurger()"
+            />
+          </div>
+          <div id="myForm" class="form-popup">
+            <div>
+              <form class="form-container" method="POST">
+                <!-- <form action="submit.php" class="form-container" method="POST"> -->
+                <button class="form-popup-crose-btn" onclick="closeForm()">
+                  <img
+                    class="form-popup-crose-img"
+                    src="./images/icons/cross.png"
+                    alt="cross"
+                    id="closeTheApplicationForm"
+                  />
+                </button>
+                <div class="form-content">
+                  <h3 class="form-container-h3">Оставить заявку</h3>
+                  <input type="text" placeholder="Ваше имя*" name="name" required class="form-popup-input" maxlength="20"/>
+                  <input type="text" placeholder="Номер телефона*" name="phone" required class="form-popup-input" maxlength="20"/>
+                  <input
+                    type="text"
+                    placeholder="Телеграм для связи*"
+                    name="telegram"
+                    required
+                    class="form-popup-input"
+                         maxlength="20"
+                  />
+                  <p class="form-popup-massage">
+                    *Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных.
+                  </p>
+                  <button type="button" class="button-Form" onclick="sendFormData()">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- модалка проверка возраста -->
+    <div id="ageModal" class="modal">
+      <div class="modal-content">
+        <img class="image-content" src="./images/icons/logo_tittle1.png" alt="logo" />
+        <p>Подтвердите что Вам больше 18 лет.</p>
+        <div class="button-container">
+          <button class="primary-button" onclick="confirmAge()">Мне больше 18 лет</button>
+          <button class="secondary-button" onclick="rejectAge()">Мне меньше 18 лет</button>
+        </div>
+
+        <h1 class="info-age">
+          Сайт носит информационный характер и не рекламирует табачную продукцию. Вся информация представлена в целях
+          ознакомления, а не агитации или рекламирования товара.
+        </h1>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <a class="nav-item active" href="#imagenavigation_test">Главная</a>
+      <a class="nav-item" href="#product">Каталог</a>
+      <a class="nav-item" href="#about-company">О Компании</a>
+      <a class="nav-item" href="#reviews-wrapp">Отзывы</a>
+      <a class="nav-item" href="#contact">Контакты</a>
+      <div class="navbar_animation"></div>
+    </nav>
+    <div class="main_unit-container" id="main_unit-container">
+      <div class="block_fixed_headee" id="imagenavigation"></div>
+      <div class="swiper_baner" id="imagenavigation_test">
+        <!-- Additional required wrapper -->
+        <button class="nextslide_baner" id="nextslide_baner">
+          <img src="./images/icons/Right_аrrow.png" alt="" />
+        </button>
+        <button class="prevslide_baner" id="prevslide_baner">
+          <img src="./images/icons/Left_аrrow.png" alt="" />
+        </button>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="imagenavigation" src="./images/slider_baner1.jpg" alt="ElfBar" />
+          </div>
+          <div class="swiper-slide">
+            <img class="imagenavigation" src="./images/slider_baner1.jpg" alt="ElfBar" />
+          </div>
+          <div class="swiper-slide">
+            <img class="imagenavigation" src="./images/slider_baner1.jpg" alt="ElfBar" />
+          </div>
+        </div>
+      </div>
+      <section class="feature-section">
+        <div class="feature-container">
+          <div class="feature-item">
+            <img src="./images/delivery.png" alt="ElfBar" class="feature-item-img-delivery-mobalil" />
+            <div class="feature-item-img feature-item-img-desktop">
+              <img src="./images/delivery.png" alt="ElfBar" class="feature-item-img-delivery" />
+            </div>
+            <div class="feature-title-container">
+              <h3>Доставка</h3>
+              <div class="additional-info">Доставка без задержек в любую точку города</div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item-img">
+              <img src="./images/check_mark.png" alt="ElfBar" />
+            </div>
+            <div class="feature-title-container">
+              <h3>Гарантия качества</h3>
+              <div class="additional-info">Качественный товар проверенный годами</div>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item-img">
+              <img src="./images/discount.png" alt="ElfBar" />
+            </div>
+            <div class="feature-title-container">
+              <h3>Скидка 10%</h3>
+              <div class="additional-info">Скидка 10% на первую покупку</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product-section" id="product">
+        <h3 class="title-product">Поды/Одноразки</h3>
+        <div class="swiper__silder_wrapp">
+          <!-- onclick="moveSlide(1)" -->
+          <button class="nextslides" id="eSigsBlocknextBtn">❯</button>
+          <div class="eSigsBlock">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="eSigs"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-section">
+        <h3 class="title-product">Жидкости (оригинал)</h3>
+        <div class="swiper__silder_wrapp">
+          <button class="nextslides2" id="chewingGumnexBtn">❯</button>
+          <div class="chewingGumBlcok">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="chewingGum"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-section">
+        <h3 class="title-product">Жидкости (реплика)</h3>
+        <div class="swiper__silder_wrapp">
+          <button class="nextslides3" id="iqosBlocknexBtn">❯</button>
+          <div class="iqosBlock">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="iqos"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-section">
+        <h3 class="title-product">Расходники</h3>
+        <div class="swiper__silder_wrapp">
+          <button class="nextslides4" id="sticksBlocknexBtn">❯</button>
+          <div class="sticksBlock">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="sticks"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-company-section" id="about-company">
+        <h2 class="section-title" id="about-company">О компании</h2>
+        <!-- <div class="section-content"> -->
+        <div class="info-text">
+          <p>
+            DesertEagle Shop - молодая, но амбициозная компания, занимающаяся розничными продажами. 
+            На нашем счету всегда успешные сделки и положительные отзывов от довольных клиентов.
+          </p>
+          <p>
+            Наша команда тщательно подходит к выбору товара. Именно поэтому мы работаем напрямую с производителями, что
+            дает гарантию качества нашей продукции.
+          </p>
+          <p>
+            DesertEagle Shop имеет большой ассортимент различных электронных сигарет, расходников для электронных сигарет, 
+            жидкостей и одноразок. Мы собрали лучшие продукты для вейпинга в одном месте, чтобы сделать ваш выбор проще и доступнее.
+          </p>
+          <p>
+            Наши знания и опыт позволяют уверенно подбирать для вас продукцию, учитывая ваши вкусы и предпочтения, 
+            создавая идеальное сочетание крепости и аромата под любое настроение и желание.
+          </p>
+        </div>
+      </section>
+
+      <div class="reviews-wrapp" id="reviews-wrapp">
+        <h1 class="section-title">Отзывы</h1>
+        <div class="Test_review">
+          <div class="nextReview" id="nextReview">&#10095;</div>
+          <div class="prevReview" id="prevReview">&#10094;</div>
+          <section class="reviews" id="reviews">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="review__cart_wrapp">
+                  <div class="review__cart">
+                    <!-- <div class="review__more_btn">подробнее..</div> -->
+                    <h1></h1>
+                    <div class="review-avatar-container">
+                      <img class="avatar" src="./images/avatar4.png" alt="Аватар 1 " />
+                      <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                      <p class="nickname">Александра</p>
+                    </div>
+                    <!-- <div class="text-container"> -->
+                    <div class="text">
+                      Заказала себе недавно электронную сигарету DUALL NEO и осталась очень довольна!
+                      <!-- <br />
+                      Во-первых, устройство отличается крутым дизайном и удобной формой, во-вторых, были на связи в
+                      течении всей цепочки от оплаты счета до сверения кодов. Рекомендую всем, кто переходит на работу в
+                      белую. Доставили через 7 дней, как и говорили. Доставкой довольна. Во-первых, устройство
+                      отличается крутым дизайном и удобной формой, во-вторых, были на связи в течении всей цепочки от
+                      оплаты счета до сверения кодов. Рекомендую всем, кто переходит на работу в белую. Доставили через
+                      7 дней, как и говорили. Доставкой довольна. -->
+                    </div>
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review__cart_wrapp">
+                  <div class="review__cart">
+                    <!-- <div class="review__more_btn">подробнее..</div> -->
+                    <h1></h1>
+                    <div class="review-avatar-container">
+                      <img class="avatar" src="./images/avatar2.png" alt="Аватар 1 " />
+                      <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                      <p class="nickname">Назар</p>
+                    </div>
+                    <!-- <div class="text-container"> -->
+                    <div class="text">
+                      Интересная вещь, для тех кто устал от сигарет и электронок многие с помощью него бросают курить.
+                      <!-- <br />
+                      Много разных позиций по по вкусу, брендам и граммам. Лучше всего у нас продаются позиции по 16
+                      грамм.Самый популярный на данный момент это оденс колд драй 16 мг никотина, хорошее качество
+                      продукта и хорошая маржинальность для акцизных товаров.Поставщику спасибо за оперативность, желаем
+                      дальнейшего процветания! -->
+                    </div>
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review__cart_wrapp">
+                  <div class="review__cart">
+                    <!-- <div class="review__more_btn">подробнее..</div> -->
+                    <h1></h1>
+                    <div class="review-avatar-container">
+                      <img class="avatar" src="./images/avatar1.png" alt="Аватар 1 " />
+                      <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                      <p class="nickname">Никита</p>
+                    </div>
+                    <!-- <div class="text-container"> -->
+                    <div class="text">
+                     Отличный продавец, советую)
+<!-- 
+                      <br /><br />Интересная вещь, для тех кто устал от сигарет и электронок многие с помощью него
+                      бросают курить. -->
+                    </div>
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="review__cart_wrapp">
+                  <div class="review__cart">
+                    <!-- <div class="review__more_btn">подробнее..</div> -->
+                    <h1></h1>
+                    <div class="review-avatar-container">
+                      <img class="avatar" src="./images/avatar3.png" alt="Аватар 1 " />
+                      <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                      <p class="nickname">Денис</p>
+                    </div>
+                    <!-- <div class="text-container"> -->
+                    <div class="text">
+                      Жижка вкусная, кайфовая. Цена отличная. Всем советую
+
+                      <!-- <br /><br />Интересная вещь, для тех кто устал от сигарет и электронок многие с помощью него
+                      бросают курить. -->
+                    </div>
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <h1></h1>
+      </div>
+      <!-- <section class="section-documents" id="section-documents"> -->
+        <!-- <h1 class="title-document">Документы и сертификаты</h1> -->
+        <!-- <div class="documnets-container"> -->
+          <!-- <div class="column" id="column1 "> -->
+            <!-- <a class="document" href="1.pdf " download>
+              <img src="./images/icons/file-icon.png" alt="file_icon" />
+              <p>Свидетельство Роспатента о торговой марке</p>
+            </a> -->
+            <!-- <a class="document" href="1.pdf " download>
+              <img src="./images/icons/file-icon.png" alt="file_icon" />
+              <p>Декларация ЕАС</p>
+            </a> -->
+
+            <!-- <a class="document" href="Новый-документ.pdf " download>
+              <img src="./images/icons/file-icon.png" alt="file_icon" />
+              <p>Декларация о соответствии УПД с номерами</p>
+            </a>  -->
+
+             <!-- <a class="document" href="Новый-документ.pdf " download>
+              <img src="./images/icons/file-icon.png" alt="file_icon" />
+              <p>Честный знак</p>
+            </a> 
+          </div> -->
+
+          <!-- <div class="column" id="column2 ">
+             <a class="document" href="Новый-документ.pdf " download>
+              <img src="./images/icons/file-icon.png" alt="file_icon" />
+              <p>Декларация ЕАС</p>
+            </a>  -->
+
+             <!-- <a class="document" href="1.pdf " download>
+              <img src="./images/icons/file-icon.png" alt="file_icon" />
+              <p>Сертификат Качества</p>
+            </a> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </section> -->
+    </div> 
+    <div class="product__main_wrapp" id="product__main_wrapp">
+      <div class="product__main_heder_fon"></div>
+      <div class="product__main" id="product__main"></div>
+      
+    </div>
+    <footer class="footer" id="footer-contact">
+      <div class="footer-container">
+        <div class="footer-contact-info" id="contact">
+          <h3>Контактная информация</h3>
+          <div class="social-icons">
+            <a href="https://vk.com/deserteagle_shop" target="_blank "><img src="./images/icons/vk.png" alt="VK " /></a>
+            <a href="https://t.me/deserteaglestore" target="_blank "
+              ><img src="./images/icons/telegram.png" alt="Telegram "
+            /></a>
+            <!-- <a
+              href="https://wa.me/79959189616  "
+              target="_blank "
+              ><img src="./images/icons/watsapp.png" alt="WhatsApp "
+            /></a>  -->
+          </div>
+        </div>
+        <a href="#imagenavigation" onclick="ClickHomePage()">
+          <img src="./images/icons/logo_tittle1.png" alt="logo" class="TITANLOGOAPP"
+        /></a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index1.js"></script>
+  </body>
+</html>
