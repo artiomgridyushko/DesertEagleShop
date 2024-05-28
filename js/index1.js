@@ -3,12 +3,11 @@ function sendFormData() {
   var phone = document.querySelector('input[name="phone"]').value;
   var telegram = document.querySelector('input[name="telegram"]').value;
 
-  if (name && telegram) {
-    var products = JSON.parse(localStorage.getItem('productData'));
+  var products = JSON.parse(localStorage.getItem('productData'));
 
-    var productsMessage = '';
+  if (name && telegram) {
     if (products && products.length > 0) {
-      productsMessage += 'Товары в корзине:\n\n';
+      var productsMessage = 'Товары в корзине:\n\n';
       var totalPrice = 0;
       products.forEach(function (product) {
         productsMessage += 'Название: ' + product.title + '\n';
@@ -21,45 +20,46 @@ function sendFormData() {
         productsMessage += '\n';
       });
       productsMessage += 'Общая сумма заказа: ' + totalPrice + '\n';
+
+      var message = 'Новая заявка!\n\n';
+      message += 'Имя: ' + name + '\n';
+      if (phone) {
+        message += 'Номер телефона: ' + phone + '\n';
+      }
+      message += 'Телеграм: ' + telegram + '\n\n';
+      message += productsMessage;
+
+      var token = '7078493412:AAHgD4pvapCv7UaViSDgek1tjuWxxqqJncI';
+      var chatId = '-1002213479267';
+
+      var url =
+        'https://api.telegram.org/bot' +
+        token +
+        '/sendMessage?chat_id=' +
+        chatId +
+        '&text=' +
+        encodeURIComponent(message);
+
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          alert('Заявка успешно отправлена в чат!');
+          localStorage.removeItem('productData');
+          location.reload();
+        })
+        .catch((error) => {
+          console.error('Ошибка:', error);
+          alert('Произошла ошибка при отправке заявки.');
+        });
     } else {
-      productsMessage = 'В корзине нет товаров.';
+      alert('В корзине нет товаров. Пожалуйста, добавьте товары в корзину перед отправкой заявки.');
     }
-
-    var message = 'Новая заявка!\n\n';
-    message += 'Имя: ' + name + '\n';
-    if (phone) {
-      message += 'Номер телефона: ' + phone + '\n';
-    }
-    message += 'Телеграм: ' + telegram + '\n\n';
-    message += productsMessage;
-
-    var token = '7078493412:AAHgD4pvapCv7UaViSDgek1tjuWxxqqJncI';
-    var chatId = '-1002213479267';
-
-    var url =
-      'https://api.telegram.org/bot' +
-      token +
-      '/sendMessage?chat_id=' +
-      chatId +
-      '&text=' +
-      encodeURIComponent(message);
-
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        alert('Заявка успешно отправлена в чат!');
-        localStorage.removeItem('productData');
-        location.reload();
-      })
-      .catch((error) => {
-        console.error('Ошибка:', error);
-        alert('Произошла ошибка при отправке заявки.');
-      });
   } else {
     alert('Пожалуйста, заполните все обязательные поля формы.');
   }
 }
+
 
 const basketCount = document.querySelector('#cart');
 const basketModl = document.querySelector('#basketModal');
