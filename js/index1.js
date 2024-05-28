@@ -3,7 +3,7 @@ function sendFormData() {
   var phone = document.querySelector('input[name="phone"]').value;
   var telegram = document.querySelector('input[name="telegram"]').value;
 
-  if (name && phone && telegram) {
+  if (name && telegram) {
     var products = JSON.parse(localStorage.getItem('productData'));
 
     var productsMessage = '';
@@ -27,12 +27,13 @@ function sendFormData() {
 
     var message = 'Новая заявка!\n\n';
     message += 'Имя: ' + name + '\n';
-    message += 'Номер телефона: ' + phone + '\n';
+    if (phone) {
+      message += 'Номер телефона: ' + phone + '\n';
+    }
     message += 'Телеграм: ' + telegram + '\n\n';
     message += productsMessage;
 
     var token = '7078493412:AAHgD4pvapCv7UaViSDgek1tjuWxxqqJncI';
-
     var chatId = '-1002213479267';
 
     var url =
@@ -56,9 +57,10 @@ function sendFormData() {
         alert('Произошла ошибка при отправке заявки.');
       });
   } else {
-    alert('Пожалуйста, заполните все поля формы.');
+    alert('Пожалуйста, заполните все обязательные поля формы.');
   }
 }
+
 const basketCount = document.querySelector('#cart');
 const basketModl = document.querySelector('#basketModal');
 const basketModlContent = document.querySelector('#basketModal-container');
