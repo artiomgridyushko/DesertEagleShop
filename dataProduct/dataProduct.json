@@ -126,7 +126,7 @@
       "img": "./Tabak/Самоубийца/1.jpg",
       "title": "Самоубийца",
       "price": 20,
-      "productOptionImage": ["./Tabak/Самоубийца/1.jpg", "./Tabak/Самоубийца/2.jpg", "./Tabak/Самоубийца/3.jpg"],
+      "productOptionImage": ["./Tabak/Самоубийца/1.jpg", "./Tabak/Самоубийца/2.jpg"],
 
       "typeOfProduct": [
         { "id": 1, "type": "Зеленое яблоко" },
