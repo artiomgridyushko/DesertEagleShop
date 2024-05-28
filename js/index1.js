@@ -1,9 +1,33 @@
+document.addEventListener('DOMContentLoaded', function() {
+  var telegramInput = document.querySelector('input[name="telegram"]');
+
+  // Ensure the "@" is always at the beginning and cannot be removed
+  telegramInput.addEventListener('input', function() {
+    if (!telegramInput.value.startsWith('@')) {
+      telegramInput.value = '@' + telegramInput.value.replace(/@/g, '');
+    }
+  });
+
+  // Prevent the "@" from being deleted
+  telegramInput.addEventListener('keydown', function(event) {
+    if (telegramInput.selectionStart === 0 && (event.key === 'Backspace' || event.key === 'Delete')) {
+      event.preventDefault();
+    }
+  });
+});
+
 function sendFormData() {
   var name = document.querySelector('input[name="name"]').value;
   var phone = document.querySelector('input[name="phone"]').value;
   var telegram = document.querySelector('input[name="telegram"]').value;
 
   var products = JSON.parse(localStorage.getItem('productData'));
+
+
+  if (!telegram.startsWith('@')) {
+    alert('Телеграм должен начинаться с символа @.');
+    return;
+  }
 
   if (name && telegram) {
     if (products && products.length > 0) {
