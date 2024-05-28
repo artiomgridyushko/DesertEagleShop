@@ -26,6 +26,20 @@
   },
 
   
+
+  {
+    "id": 7,
+    "img": "./Electronic/Mishki 4000/1.jpg",
+    "title": "Мишки 4000",
+    "price": 15,
+    "productOptionImage": ["./Electronic/Mishki 4000/1.jpg", "./Electronic/Mishki 4000/2.jpg", "./Electronic/Mishki 4000/3.jpg"],
+    "typeOfProduct": [
+      { "id": 1, "type": "Лимонный пирог" }
+    ],
+    "moreDetails": "<span>Мишки 400</span> - это электронная сигарета, которая предлагает множество возможностей и преимуществ. Она оснащена технологией, благодаря которой взаимозаменяема с картреджами для POD-системы Vaporesso.<p> "
+  },
+
+
   {
     "id": 3,
     "img": "./Stick/Xros/1.jpg",
