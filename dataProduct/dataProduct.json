@@ -122,18 +122,6 @@
 
   },
     {
-      "id": 2,
-      "img": "./Tabak/Самоубийца&Грех/1.jpg",
-      "title": "Самоубийца&Грех",
-      "price": 20,
-      "productOptionImage": ["./Tabak/Самоубийца&Грех/1.jpg", "./Tabak/Самоубийца&Грех/2.jpg", "./Tabak/Самоубийца&Грех/3.jpg"],
-
-      "typeOfProduct": [
-        { "id": 1, "type": "Киви с яблоком" }
-      ],
-      "moreDetails": "<span>Самоубийца&Грех </span>«Дай го##а,дай ложку». Или же покрепче да с прекрасным вкусом - САМОУБИЙЦА&ГРЕХ, вот что можем предложить.  <p><span> Крепость: </span> 80 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
-    },
-    {
       "id": 3,
       "img": "./Tabak/Самоубийца/1.jpg",
       "title": "Самоубийца",
@@ -181,19 +169,6 @@
         { "id": 10, "type": "Розовый лимонад" }
       ],
       "moreDetails": "<span>PodonkiMalasia </span>После успешной коллабы с командой ЖМЫХ LABS, в результате которой вышли жидкости Podonki Анархия, ребята из TRAIN LAB объединились с миксологами BLAST и выдали новую линейку вкусняшек. От первых – правильный и мощный никотин, от вторых вкусовая составляющая на основе Малайзийских ароматизаторов.<p><span> Крепость: </span> 60 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
-    },
-    {
-      "id": 6,
-      "img": "./Tabak/Podonki V1/1.jpg",
-      "title": "Podonki V1",
-      "price": 15,
-      "productOptionImage": ["./Tabak/Podonki V1/1.jpg", "./Tabak/Podonki V1/2.jpg", "./Tabak/Podonki V1/3.jpg"],
-
-      "typeOfProduct": [
-        { "id": 1, "type": "Классическая кола со льдом" },
-        { "id": 2, "type": "Двойное яблоко со льдом" }
-      ],
-      "moreDetails": "<span>PODONKI V1 </span>Неординарные личности. Освежающие жидкости — один из главных трендов лета. Множество парильщиков тратят время на поиски простых, но культовых сочетаний, которые помогут пережить с комфортом жаркие деньки. <p><span> Крепость: </span> 60 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
     },
     {
       "id": 7,
@@ -364,17 +339,6 @@
       "moreDetails": "<span>Картридж Xros</span>  "
     },
     {
-      "id": 3,
-      "img": "./Stick/Vmate/1.jpg",
-      "title": "Картридж всру/вмейт",
-      "price": 14,
-      "productOptionImage": ["./Stick/Vmate/1.jpg", "./Stick/Vmate/2.jpg", "./Stick/Vmate/3.jpg"],
-      "typeOfProduct": [
-        { "id": 1, "type": "Картридж всру/вмейт" }
-      ],
-      "moreDetails": "<span>Картридж всру/вмейт</span>  "
-    },
-    {
       "id": 4,
       "img": "./Stick/Charon baby plus/1.jpg",
       "title": "Картридж Charon baby",
@@ -395,17 +359,6 @@
         { "id": 1, "type": "Картридж Aegis Hero 2 (H45) " }
       ],
       "moreDetails": "<span>Картридж Aegis Hero 2 (H45) </span>  "
-    },
-    {
-      "id": 6,
-      "img": "./Stick/b-siries 0.2 om/1.jpg",
-      "title": "Испаритель b-siries 0.2 om",
-      "price": 14,
-      "productOptionImage": ["./Stick/b-siries 0.2 om/1.jpg", "./Stick/b-siries 0.2 om/2.jpg", "./Stick/b-siries 0.2 om/3.jpg"],
-      "typeOfProduct": [
-        { "id": 1, "type": "Испаритель b-siries 0.2 om" }
-      ],
-      "moreDetails": "<span>Испаритель b-siries 0.2 om</span>"
     },
     {
       "id": 7,
