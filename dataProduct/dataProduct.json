@@ -328,17 +328,6 @@
       "moreDetails": "<span>Картидж Ditron</span> "
     },
     {
-      "id": 3,
-      "img": "./Stick/Xros/1.jpg",
-      "title": "Картридж Xros",
-      "price": 14,
-      "productOptionImage": ["./Stick/Xros/1.jpg", "./Stick/Xros/2.jpg", "./Stick/Xros/3.jpg"],
-      "typeOfProduct": [
-        { "id": 1, "type": "Картридж Xros" }
-      ],
-      "moreDetails": "<span>Картридж Xros</span>  "
-    },
-    {
       "id": 4,
       "img": "./Stick/Charon baby plus/1.jpg",
       "title": "Картридж Charon baby",
