@@ -102,19 +102,48 @@
                     id="closeTheApplicationForm"
                   />
                 </button>
+                <style>
+                  .form-popup-input {
+                      display: block;
+                      margin-bottom: 10px;
+                      padding: 8px;
+                      font-size: 16px;
+                  }
+              </style>
                 <div class="form-content">
                   <h3 class="form-container-h3">Оставить заявку</h3>
                   <input type="text" placeholder="Ваше имя*" name="name" required class="form-popup-input" maxlength="20"/>
                   <input type="tel" placeholder="Номер телефона" name="phone" class="form-popup-input" maxlength="20" inputmode="numeric" pattern="[0-9]*"/>
                   <input
-                    type="text"
-                    placeholder="Телеграм для связи*"
-                    name="telegram"
-                    required
-                    class="form-popup-input"
-                         maxlength="20"
-                         value="@"
-                  />
+                  type="text"
+                  placeholder="Телеграм для связи*"
+                  name="telegram"
+                  required
+                  class="form-popup-input"
+                  maxlength="20"
+                  value="@"
+                  onfocus="clearPlaceholder(this)"
+                  onblur="setPlaceholder(this)"
+              />
+              <script>
+                function clearPlaceholder(input) {
+                    if (input.value === 'Телеграм' || input.value === '@') {
+                        input.value = '@';
+                    }
+                }
+        
+                function setPlaceholder(input) {
+                    if (input.value === '@' || input.value === '') {
+                        input.value = 'Телеграм';
+                    }
+                }
+                
+                // Инициализация подсказки для поля Telegram при загрузке страницы
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    const telegramInput = document.querySelector('input[name="telegram"]');
+                    setPlaceholder(telegramInput);
+                });
+            </script>
                   <p class="form-popup-massage">
                     *Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных.
                   </p>
