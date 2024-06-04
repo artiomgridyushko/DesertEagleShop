@@ -134,12 +134,9 @@
         { "id": 1, "type": "Вишня-ананас" },
         { "id": 2, "type": "Черника-малина-лимон" },
         { "id": 3, "type": "Маракуйя гуава-апельсин" },
-        { "id": 4, "type": "Малина клубника-черная и красная смородина" },
         { "id": 5, "type": "Манго-гуава-маракуйя" },
         { "id": 6, "type": "Жвачка-клубника-киви" },
-        { "id": 7, "type": "Черника-смородина-малина-анис-ментол" },
-        { "id": 9, "type": "Мармеладные мишки с мандарином" },
-        { "id": 10, "type": "Розовый лимонад" }
+        { "id": 10, "type": "Розовый лимонад мармеладные мишки" }
       ],
       "moreDetails": "<span>PodonkiMalasia </span>После успешной коллабы с командой ЖМЫХ LABS, в результате которой вышли жидкости Podonki Анархия, ребята из TRAIN LAB объединились с миксологами BLAST и выдали новую линейку вкусняшек. От первых – правильный и мощный никотин, от вторых вкусовая составляющая на основе Малайзийских ароматизаторов.<p><span> Крепость: </span> 60 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
     },
@@ -151,15 +148,9 @@
       "productOptionImage": ["./Tabak/Blood/1.jpg", "./Tabak/Blood/2.jpg", "./Tabak/Blood/3.jpg"],
 
       "typeOfProduct": [
-        { "id": 1, "type": "Клубника-красная смородина" },
-        { "id": 2, "type": "Лесная клубника" },
-        { "id": 3, "type": "Сладкий манго" },
-        { "id": 4, "type": "Малина-гранат" },
-        { "id": 5, "type": "Черника-виноград" },
-        { "id": 6, "type": "Персик" },
-        { "id": 7, "type": "Черная смородина" },
-        { "id": 8, "type": "Жвачка" },
-        { "id": 9, "type": "Малиновый лимонад" }
+        { "id": 1, "type": "Сочный манго" },
+        { "id": 2, "type": "Чёрная смородина" },
+        { "id": 3, "type": "Малина гранат" }
       ],
       "moreDetails": "<span>BLOOD </span>монстрический вид, монстрический вкус, монстричесий жмых. Это все про эту линейку. <p><span> Крепость: </span> 60 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
     },
@@ -171,13 +162,11 @@
       "productOptionImage": ["./Tabak/Duall/1.jpg", "./Tabak/Duall/2.jpg", "./Tabak/Duall/3.jpg"],
 
       "typeOfProduct": [
-        { "id": 1, "type": "Виноград-клубника" },
-        { "id": 2, "type": "Морозный виноград" },
-        { "id": 3, "type": "Манго кумкват" },
+        { "id": 2, "type": "Морозный редбулл" },
+        { "id": 3, "type": "Личи гуава" },
         { "id": 4, "type": "Холодная смородина" },
-        { "id": 5, "type": "Киви-гуава" },
-        { "id": 6, "type": "Морозный редбулл" },
-        { "id": 7, "type": "Грейпфрут малина клубника" }
+        { "id": 5, "type": "Манго кумкват" },
+        { "id": 6, "type": "Морозный виноград" }
       ],
       "moreDetails": "<span>DUALL </span>жижа, которая перевернет понимание о яркости вкуса в жидкостях. Максимальная насыщенность вкуса - вот что обозначает EXTRA в данной линейке!<p><span> Крепость: </span> 50 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
     },
@@ -226,6 +215,204 @@
         { "id": 5, "type": "Грейпфрут-хвоя" }
       ],
       "moreDetails": "<span>PRIGOVOR </span>Как заявляет Лаборатория кайфа: Есть крепкие жижи, есть вкусные жижи, но крепких и вкусных нет! Более 3 - месяцев наша лаборатория создавала что-то новое, что-то индивидуальное, и наконец-то получилось! Линейка «PRIGOVOR».<p><span> Крепость: </span> 60 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
+    },
+    {
+      "id": 2,
+      "img": "./Tabak/Самоубийца&Грех/1.jpg",
+      "title": "Самоубийца&Грех",
+      "price": 20,
+      "productOptionImage": ["./Tabak/Самоубийца&Грех/1.jpg", "./Tabak/Самоубийца&Грех/2.jpg", "./Tabak/Самоубийца&Грех/3.jpg"],
+  
+      "typeOfProduct": [
+        { "id": 1, "type": "Зеленый виноград с нотками киви" },
+        { "id": 2, "type": "Киви с яблоком" },
+        { "id": 3, "type": "Вишневый компот" },
+        { "id": 4, "type": "Спелая малина с вишней" },
+        { "id": 5, "type": "Земляника-черника" },
+        { "id": 6, "type": "Медовая дыня с арбузом" },
+        { "id": 7, "type": "Скитлс" },
+        { "id": 8, "type": "Манго-ананас" }
+      ],
+      "moreDetails": "<span>Самоубийца&Грех </span>«Дай го##а,дай ложку». Или же покрепче да с прекрасным вкусом - САМОУБИЙЦА&ГРЕХ, вот что можем предложить.  <p><span> Крепость: </span> 80 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
+    },
+    {
+      "id": 6,
+      "img": "./Tabak/Podonki V1/1.jpg",
+      "title": "Podonki V1",
+      "price": 15,
+      "productOptionImage": ["./Tabak/Podonki V1/1.jpg", "./Tabak/Podonki V1/2.jpg", "./Tabak/Podonki V1/3.jpg"],
+  
+      "typeOfProduct": [
+        { "id": 1, "type": "Бабблгам с арбузом и мятой" },
+        { "id": 2, "type": "Черника-малина-мята-лед" },
+        { "id": 3, "type": "Брусника-клюква-малина" },
+        { "id": 4, "type": "Малиново-клубничная жвачка" },
+        { "id": 5, "type": "Ледяной личи-виноград-мята" }
+      ],
+      "moreDetails": "<span>PODONKI V1 </span>Неординарные личности. Освежающие жидкости — один из главных трендов лета. Множество парильщиков тратят время на поиски простых, но культовых сочетаний, которые помогут пережить с комфортом жаркие деньки. <p><span> Крепость: </span> 60 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
+    },
+    {
+      "id": 7,
+      "img": "./Tabak/Podonki V2/1.jpg",
+      "title": "Podonki V2",
+      "price": 15,
+      "productOptionImage": ["./Tabak/Podonki V2/1.jpg", "./Tabak/Podonki V2/2.jpg","./Tabak/Podonki V2/3.jpg"],
+  
+      "typeOfProduct": [
+        { "id": 1, "type": "Ананасовый энергетик" },
+        { "id": 2, "type": "Виноградно-кактусовая жвачка" },
+        { "id": 3, "type": "Клубничное мороженное" }
+      ],
+      "moreDetails": "<span>PODONKI V2 </span>Неординарные личности. Освежающие жидкости — один из главных трендов лета. Множество парильщиков тратят время на поиски простых, но культовых сочетаний, которые помогут пережить с комфортом жаркие деньки. <p><span> Крепость: </span> 60 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
+    },
+    {
+      "id": 6,
+      "img": "./Tabak/Palpy/1.jpg",
+      "title": "Palpy",
+      "price": 20,
+      "productOptionImage": ["./Tabak/Palpy/1.jpg", "./Tabak/Palpy/2.jpg", "./Tabak/Palpy/3.jpg"],
+  
+      "typeOfProduct": [
+        { "id": 1, "type": "Малина-лимон" },
+        { "id": 2, "type": "Черника-малина" }
+      ],
+      "moreDetails": "<span>Palpy </span>жижа с отменным вкусом,приятно парится,идеальна для новичков. <p><span> Крепость: </span> 3 мг</p><p> <span>Объем жидкости:</span> 100 мл</p><p> <span>Никотин:</span> щелочной</p> "
+    },
+    {
+      "id": 16,
+      "img": "./Tabak/Анархист/1.jpg",
+      "title": "Анархист",
+      "price": 20,
+      "productOptionImage": ["./Tabak/Анархист/1.jpg", "./Tabak/Анархист/2.jpg", "./Tabak/Анархист/3.jpg"],
+  
+      "typeOfProduct": [
+        { "id": 1, "type": "Ананас" },
+        { "id": 2, "type": "Апельсин" },
+        { "id": 3, "type": "Лимон-лайм" },
+        { "id": 4, "type": "Киви-яблоко" },
+        { "id": 5, "type": "Малина-смородина" },
+        { "id": 6, "type": "Кокос и ягоды" },
+        { "id": 7, "type": "Классический энергетик" },
+        { "id": 8, "type": "Тропический микс" },
+        { "id": 9, "type": "Манго" }
+      ],
+      "moreDetails": "<span>Анархист </span>Забористая штука,в каждом вкусе присутсвует вкус энергетика. <p><span> Крепость: </span> 70 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
+    },
+    {
+      "id": 7,
+      "img": "./Tabak/Злая Монашка/1.jpg",
+      "title": "Злая Монашка",
+      "price": 18,
+      "productOptionImage": ["./Tabak/Злая Монашка/1.jpg", "./Tabak/Злая Монашка/2.jpg","./Tabak/Злая Монашка/3.jpg"],
+  
+      "typeOfProduct": [
+        { "id": 1, "type": "Энергетик-вишня-лед" },
+        { "id": 2, "type": "Ягодный морс" },
+        { "id": 3, "type": "Энергетик-виноград-лед" },
+        { "id": 4, "type": "Малиновое варенье" },
+        { "id": 5, "type": "Черничный энергетик" },
+        { "id": 6, "type": "Кислый чупа чупс с холодком" },
+        { "id": 7, "type": "Дикая малина с черникой" }
+      ],
+      "moreDetails": "<span>Злая Монашка </span>Агрессивно,дерзко,прикольно - я оценил <p><span> Крепость: </span> 70 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
+    },
+    {
+      "id": 7,
+      "img": "./Tabak/Hot Spot Hangang/1.jpg",
+      "title": "Hot Spot Hangang",
+      "price": 16,
+      "productOptionImage": ["./Tabak/Hot Spot Hangang/1.jpg", "./Tabak/Hot Spot Hangang/2.jpg","./Tabak/Hot Spot Hangang/3.jpg"],
+  
+      "typeOfProduct": [
+        { "id": 1, "type": "Кола-имбирь-лайм" },
+        { "id": 2, "type": "Йогурт-черника-лаванда" },
+        { "id": 3, "type": "Лимонад-личи-базилик" },
+        { "id": 4, "type": "Черный чай с персиком-жасмин" }
+      ],
+      "moreDetails": "<span>Hot Spot Hangang </span>Вкусно,необычно,причем не приторное,можно брать на пробу <p><span> Крепость: </span> 60 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
+    },
+    {
+      "id": 7,
+      "img": "./Tabak/Faff Shooter/1.jpg",
+      "title": "Faff Shooter",
+      "price": 15,
+      "productOptionImage": ["./Tabak/Faff Shooter/1.jpg", "./Tabak/Faff Shooter/2.jpg","./Tabak/Faff Shooter/3.jpg"],
+  
+      "typeOfProduct": [
+        { "id": 1, "type": "Лимонад с малиной и ягодами" },
+        { "id": 2, "type": "Кислый лимонад с маракуйей" },
+        { "id": 3, "type": "Холодный чай с лесными ягодами" },
+        { "id": 4, "type": "Клубничный лимонад" },
+        { "id": 5, "type": "Лимонад с арбузом, лимоном и ананасом" },
+        { "id": 6, "type": "Манго-лесные ягоды-вишня" },
+        { "id": 7, "type": "Манго-клюква" }
+      ],
+      "moreDetails": "<span>Faff Shooter </span>Прикольная ировая версия от фафф, можно выбрать игру))))  <p><span> Крепость: </span> 60 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
+    },
+    {
+      "id": 7,
+      "img": "./Tabak/Faff/1.jpg",
+      "title": "Faff Shooter",
+      "price": 15,
+      "productOptionImage": ["./Tabak/Faff/1.jpg", "./Tabak/Faff/2.jpg","./Tabak/Faff/3.jpg"],
+  
+      "typeOfProduct": [
+        { "id": 1, "type": "Маракуйя-персик-личи" },
+        { "id": 2, "type": "Жвачка с тропическими фруктами" },
+        { "id": 3, "type": "Кислое яблоко" },
+        { "id": 4, "type": "Банан-манго-персик-яблоко-ананас" }
+      ],
+      "moreDetails": "<span>Faff </span>Класический фафф, имба, как в старые добрые <p><span> Крепость: </span> 60 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
+    },
+    {
+      "id": 7,
+      "img": "./Tabak/Рик и Морти на замерзоне/1.jpg",
+      "title": "Рик и Морти на замерзоне",
+      "price": 15,
+      "productOptionImage": ["./Tabak/Рик и Морти на замерзоне/1.jpg", "./Tabak/Рик и Морти на замерзоне/2.jpg","./Tabak/Рик и Морти на замерзоне/3.jpg"],
+  
+      "typeOfProduct": [
+        { "id": 1, "type": "Ягодный энергетик" },
+        { "id": 2, "type": "Смородина-виноград" },
+        { "id": 3, "type": "Банан-клубника" },
+        { "id": 4, "type": "Малина-ежевика" },
+        { "id": 5, "type": "Ягодный пунш" },
+        { "id": 6, "type": "Персик-кактус" },
+        { "id": 7, "type": "Арбузная жвачка" },
+        { "id": 8, "type": "Клубника-киви" },
+        { "id": 9, "type": "Малиновый мармелад" }
+      ],
+      "moreDetails": "<span>Рик и Морти на замерзоне </span>Вкусные фруктовые миксы, с любимым и интересным мультом <p><span> Крепость: </span> 50 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
+    },
+    {
+      "id": 7,
+      "img": "./Tabak/Fruit Slots/1.jpg",
+      "title": "Fruit Slots",
+      "price": 15,
+      "productOptionImage": ["./Tabak/Fruit Slots/1.jpg", "./Tabak/Fruit Slots/1.jpg","./Tabak/Fruit Slots/1.jpg"],
+  
+      "typeOfProduct": [
+        { "id": 1, "type": "Виноград-клубника-киви" },
+        { "id": 2, "type": "Киви-малина-лимон" },
+        { "id": 3, "type": "Крыжовник-клубника-банан" }
+      ],
+      "moreDetails": "<span>Fruit Slots </span>Казик на минималках, ходят легенды можно потыкать на коробку и выбить три топора <p><span> Крепость: </span> 50 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
+    },
+    {
+      "id": 7,
+      "img": "./Tabak/Toxic/1.jpg",
+      "title": "Fruit Slots",
+      "price": 15,
+      "productOptionImage": ["./Tabak/Toxic/1.jpg", "./Tabak/Toxic/2.jpg","./Tabak/Toxic/3.jpg"],
+  
+      "typeOfProduct": [
+        { "id": 1, "type": "Энергетик" },
+        { "id": 2, "type": "Ежевика" },
+        { "id": 3, "type": "Клубника" },
+        { "id": 4, "type": "Лимон-лайм" },
+        { "id": 5, "type": "Малиновый коктейль" }
+      ],
+      "moreDetails": "<span>Toxic </span>Вкусно, приятно, парю сам, считаю имбой <p><span> Крепость: </span> 50 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
     }
     ],
 
@@ -311,6 +498,28 @@
       "moreDetails": "<span>Картридж Aegis Hero 2 (H45) </span>  "
     },
     {
+      "id": 3,
+      "img": "./Stick/Xros/1.jpg",
+      "title": "Картридж Xros",
+      "price": 14,
+      "productOptionImage": ["./Stick/Xros/1.jpg", "./Stick/Xros/2.jpg", "./Stick/Xros/3.jpg"],
+      "typeOfProduct": [
+        { "id": 1, "type": "Картридж Xros" }
+      ],
+      "moreDetails": "<span>Картридж Xros</span>  "
+    },
+    {
+      "id": 6,
+      "img": "./Stick/b-siries 0.2 om/1.jpg",
+      "title": "Испаритель b-siries 0.2 om",
+      "price": 14,
+      "productOptionImage": ["./Stick/b-siries 0.2 om/1.jpg", "./Stick/b-siries 0.2 om/2.jpg", "./Stick/b-siries 0.2 om/3.jpg"],
+      "typeOfProduct": [
+        { "id": 1, "type": "Испаритель b-siries 0.2 om" }
+      ],
+      "moreDetails": "<span>Испаритель b-siries 0.2 om</span>"
+    },
+    {
       "id": 7,
       "img": "./Stick/PnP 0.15 om/1.jpg",
       "title": "Испаритель PnP 0.15 om",
@@ -320,6 +529,17 @@
         { "id": 1, "type": "Испаритель PnP 0.15 om" }
       ],
       "moreDetails": "<span>Испаритель PnP 0.15 om</span> "
+    },
+    {
+      "id": 7,
+      "img": "./Stick/Pasik/1.jpg",
+      "title": "Испаритель Pasik K1",
+      "price": 12,
+      "productOptionImage": ["./Stick/Pasik/1.jpg", "./Stick/Pasik/2.jpg", "./Stick/Pasik/3.jpg"],
+      "typeOfProduct": [
+        { "id": 1, "type": "Испаритель Pasik K1" }
+      ],
+      "moreDetails": "<span>Испаритель Pasik K1</span> "
     }
   ]
 }
