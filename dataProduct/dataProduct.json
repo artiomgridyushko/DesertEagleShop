@@ -270,7 +270,7 @@
       "img": "./Tabak/Palpy/1.jpg",
       "title": "Palpy",
       "price": 20,
-      "productOptionImage": ["./Tabak/Palpy/1.jpg", "./Tabak/Palpy/2.jpg", "./Tabak/Palpy/3.jpg"],
+      "productOptionImage": ["./Tabak/Palpy/1.jpg"],
   
       "typeOfProduct": [
         { "id": 1, "type": "Малина-лимон" },
@@ -352,7 +352,7 @@
     {
       "id": 7,
       "img": "./Tabak/Faff/1.jpg",
-      "title": "Faff Shooter",
+      "title": "Faff",
       "price": 15,
       "productOptionImage": ["./Tabak/Faff/1.jpg", "./Tabak/Faff/2.jpg","./Tabak/Faff/3.jpg"],
   
@@ -401,7 +401,7 @@
     {
       "id": 7,
       "img": "./Tabak/Toxic/1.jpg",
-      "title": "Fruit Slots",
+      "title": "Toxic",
       "price": 15,
       "productOptionImage": ["./Tabak/Toxic/1.jpg", "./Tabak/Toxic/2.jpg","./Tabak/Toxic/3.jpg"],
   
@@ -540,6 +540,17 @@
         { "id": 1, "type": "Испаритель Pasik K1" }
       ],
       "moreDetails": "<span>Испаритель Pasik K1</span> "
+    },
+    {
+      "id": 7,
+      "img": "./Stick/VOOPOO/2.jpg",
+      "title": "Картридж для VOOPOO VMATE",
+      "price": 12,
+      "productOptionImage": ["./Stick/VOOPOO/1.jpg", "./Stick/VOOPOO/2.jpg", "./Stick/VOOPOO/3.jpg"],
+      "typeOfProduct": [
+        { "id": 1, "type": "Испаритель Pasik K1" }
+      ],
+      "moreDetails": "<span>Картридж для VOOPOO VMATE</span> "
     }
   ]
 }
