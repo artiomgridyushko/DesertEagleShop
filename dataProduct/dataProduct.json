@@ -1,17 +1,6 @@
 {
   "eSigs": [
     {
-      "id": 1,
-      "img": "./Electronic/DUALL NEO/1.jpg",
-      "title": "DUALL NEO",
-      "price": 30,
-      "productOptionImage": ["./Electronic/DUALL NEO/1.jpg", "./Electronic/DUALL NEO/2.jpg", "./Electronic/DUALL NEO/3.jpg"],
-      "typeOfProduct": [
-        { "id": 1, "type": "DUALL NEO" }
-      ],
-      "moreDetails": "<span>DUALL NEO</span>"
-    },
-    {
       "id": 2,
       "img": "./Electronic/ZERO S/1.jpg",
       "title": "ZERO S",
