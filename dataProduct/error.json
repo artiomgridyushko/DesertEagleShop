@@ -1,4 +1,81 @@
 {
+  "id": 2,
+  "img": "./Electronic/ZERO S/1.jpg",
+  "title": "ZERO S",
+  "price": 40,
+  "productOptionImage": ["./Electronic/ZERO S/1.jpg", "./Electronic/ZERO S/2.jpg", "./Electronic/ZERO S/3.jpg"],
+  "typeOfProduct": [
+    { "id": 1, "type": "ZERO S" }
+  ],
+
+  "moreDetails": "<span>ZERO S</span> "
+},
+{
+  "id": 8,
+  "img": "./Electronic/Elbar pod/1.jpg",
+  "title": "Elbar pod",
+  "price": 17,
+  "productOptionImage": ["./Electronic/Elbar pod/1.jpg", "./Electronic/Elbar pod/2.jpg", "./Electronic/Elbar pod/3.jpg"],
+  "typeOfProduct": [
+    { "id": 1, "type": "Elbar pod" }
+  ],
+  "moreDetails": "<span>Elbar pod </span>Компания Elf Bar, занимающаяся разработкой и выпуском преимущественно одноразовых устройств, представила под-систему Elfa Pod. Девайс получил поддержку широкого ассортимента предзаправленных картриджей, а также фирменный лаконичный дизайн от производителя.<p>"
+},
+
+{
+  "id": 3,
+  "img": "./Tabak/Самоубийца/1.jpg",
+  "title": "Самоубийца",
+  "price": 20,
+  "productOptionImage": ["./Tabak/Самоубийца/1.jpg", "./Tabak/Самоубийца/2.jpg"],
+
+  "typeOfProduct": [
+    { "id": 2, "type": "Спелая черника" }
+  ],
+  "moreDetails": "<span>САМОУБИЙЦА </span>«Дайте покрепче» - кричали вы. Мы не проигнорировали вас, встречайте: САМОУБИЙЦА - по истине крепкая жижа от ЖМЫХЛабс во всей красе, самое крепкое и редкое из всего что попадало мне в руки.<p><span> Крепость: </span> 80 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
+},
+
+{
+  "id": 11,
+  "img": "./Tabak/Mad/1.jpg",
+  "title": "Mad",
+  "price": 15,
+  "productOptionImage": ["./Tabak/Mad/1.jpg", "./Tabak/Mad/2.jpg", "./Tabak/Mad/3.jpg"],
+
+  "typeOfProduct": [
+    { "id": 1, "type": "Киви-ананас" },
+    { "id": 2, "type": "Ледяной манго" }
+  ],
+  "moreDetails": "<span>MAD </span>легендарная жижа, которая навела шума ранее, сейчас она просто хороша.  <p><span> Крепость: </span> 60 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
+},
+
+{
+  "id": 1,
+  "img": "./Tabak/Rell Orange/1.jpg",
+  "title": "Rell Orange",
+  "price": 25,
+  "productOptionImage": ["./Tabak/Rell Orange/1.jpg", "./Tabak/Rell Orange/2.jpg", "./Tabak/Rell Orange/3.jpg"],
+  "typeOfProduct": [
+    { "id": 1, "type": "Виноград-клубника" },
+    { "id": 2, "type": "Ледяная черника" }
+  ],
+  "moreDetails": "<span>Rell Orange </span>популярная линейка жидкостей на солевом никотине от российского производителя, выпущенная под конец лета 2021 года. Главной фишкой данной линейки жидкостей является насыщенность вкуса, приближенная к жидкостям в одноразках. <p><span> Крепость: </span> 0 мг + никобустер</p><p> <span>Объем жидкости:</span> 28 мл</p><p> <span>Никотин:</span> солевой</p> "
+
+},
+
+{
+  "id": 9,
+  "img": "./Electronic/Ditron/1.jpg",
+  "title": "Ditron",
+  "price": 17,
+  "productOptionImage": ["./Electronic/Ditron/1.jpg", "./Electronic/Ditron/2.jpg", "./Electronic/Ditron/3.jpg"],
+  "typeOfProduct": [
+    { "id": 1, "type": "Ditron" }
+  ],
+  "moreDetails": "<span>Ditron</span> - это электронная сигарета, которая предлагает множество возможностей и преимуществ. Она оснащена технологией, благодаря которой взаимозаменяема с картреджами для POD-системы Vaporesso.<p> "
+}
+
+{
     "id": 6,
     "img": "./Tabak/Podonki V1/1.jpg",
     "title": "Podonki V1",

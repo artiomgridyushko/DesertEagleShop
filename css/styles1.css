@@ -445,7 +445,8 @@ header {
 .eSigsBlock,
 .chewingGumBlcok,
 .iqosBlock,
-.sticksBlock {
+.sticksBlock,
+.snusBlock {
   overflow: hidden;
 }
 .nextslides-postion-container {
@@ -469,7 +470,8 @@ header {
 .nextslides1,
 .nextslides2,
 .nextslides3,
-.nextslides4 {
+.nextslides4,
+.nextslides5 {
   position: absolute;
   width: 25px;
   height: 25px;
@@ -1093,7 +1095,8 @@ header {
 .swiper2,
 .swiper3,
 .swiper3,
-.swiper4 {
+.swiper4,
+.swiper5 {
   overflow: hidden;
 }
 
@@ -1764,7 +1767,8 @@ header {
   .nextslides1,
   .nextslides2,
   .nextslides3,
-  .nextslides4 {
+  .nextslides4,
+  .nextslides5  {
     width: 19px;
     height: 19px;
     font-size: 10px;

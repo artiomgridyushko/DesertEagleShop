@@ -1,18 +1,6 @@
 {
   "eSigs": [
     {
-      "id": 2,
-      "img": "./Electronic/ZERO S/1.jpg",
-      "title": "ZERO S",
-      "price": 40,
-      "productOptionImage": ["./Electronic/ZERO S/1.jpg", "./Electronic/ZERO S/2.jpg", "./Electronic/ZERO S/3.jpg"],
-      "typeOfProduct": [
-        { "id": 1, "type": "ZERO S" }
-      ],
-
-      "moreDetails": "<span>ZERO S</span> "
-    },
-    {
       "id": 3,
       "img": "./Electronic/XROS III MIN/1.jpg",
       "title": "XROS III MIN",
@@ -42,61 +30,13 @@
       "productOptionImage": ["./Electronic/Urbn 1500/1.jpg", "./Electronic/Urbn 1500/2.jpg", "./Electronic/Urbn 1500/3.jpg"],
       "typeOfProduct": [
         { "id": 1, "type": "Табак и чизкейк" },
-        { "id": 1, "type": "Табак и кола" },
         { "id": 1, "type": "Табак и карамель" },
         { "id": 1, "type": "Табак" }
       ],
       "moreDetails": "<span>URBN 1500</span> 1500 компактная одноразовая POD-система, оснащенная достаточно мощным для таких размеров встроенным аккумулятором, имеющая хорошую автономность и заправленная оригинальными жидкостями на солевом никотине. Дизайн девайса одновременно оригинальный и традиционный это компактный брусок, выполненный из пластика, с эргономичным плоским мундштуком, который очень удобен в использовании.<p>"
-    },
-    {
-      "id": 8,
-      "img": "./Electronic/Elbar pod/1.jpg",
-      "title": "Elbar pod",
-      "price": 17,
-      "productOptionImage": ["./Electronic/Elbar pod/1.jpg", "./Electronic/Elbar pod/2.jpg", "./Electronic/Elbar pod/3.jpg"],
-      "typeOfProduct": [
-        { "id": 1, "type": "Elbar pod" }
-      ],
-      "moreDetails": "<span>Elbar pod </span>Компания Elf Bar, занимающаяся разработкой и выпуском преимущественно одноразовых устройств, представила под-систему Elfa Pod. Девайс получил поддержку широкого ассортимента предзаправленных картриджей, а также фирменный лаконичный дизайн от производителя.<p>"
-    },
-    {
-      "id": 9,
-      "img": "./Electronic/Ditron/1.jpg",
-      "title": "Ditron",
-      "price": 17,
-      "productOptionImage": ["./Electronic/Ditron/1.jpg", "./Electronic/Ditron/2.jpg", "./Electronic/Ditron/3.jpg"],
-      "typeOfProduct": [
-        { "id": 1, "type": "Ditron" }
-      ],
-      "moreDetails": "<span>Ditron</span> - это электронная сигарета, которая предлагает множество возможностей и преимуществ. Она оснащена технологией, благодаря которой взаимозаменяема с картреджами для POD-системы Vaporesso.<p> "
     }
   ],
   "chewingGum": [
-    {
-      "id": 1,
-      "img": "./Tabak/Rell Orange/1.jpg",
-      "title": "Rell Orange",
-      "price": 25,
-      "productOptionImage": ["./Tabak/Rell Orange/1.jpg", "./Tabak/Rell Orange/2.jpg", "./Tabak/Rell Orange/3.jpg"],
-      "typeOfProduct": [
-        { "id": 1, "type": "Виноград-клубника" },
-        { "id": 2, "type": "Ледяная черника" }
-      ],
-      "moreDetails": "<span>Rell Orange </span>популярная линейка жидкостей на солевом никотине от российского производителя, выпущенная под конец лета 2021 года. Главной фишкой данной линейки жидкостей является насыщенность вкуса, приближенная к жидкостям в одноразках. <p><span> Крепость: </span> 0 мг + никобустер</p><p> <span>Объем жидкости:</span> 28 мл</p><p> <span>Никотин:</span> солевой</p> "
-
-  },
-    {
-      "id": 3,
-      "img": "./Tabak/Самоубийца/1.jpg",
-      "title": "Самоубийца",
-      "price": 20,
-      "productOptionImage": ["./Tabak/Самоубийца/1.jpg", "./Tabak/Самоубийца/2.jpg"],
-
-      "typeOfProduct": [
-        { "id": 2, "type": "Спелая черника" }
-      ],
-      "moreDetails": "<span>САМОУБИЙЦА </span>«Дайте покрепче» - кричали вы. Мы не проигнорировали вас, встречайте: САМОУБИЙЦА - по истине крепкая жижа от ЖМЫХЛабс во всей красе, самое крепкое и редкое из всего что попадало мне в руки.<p><span> Крепость: </span> 80 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
-    },
     {
       "id": 4,
       "img": "./Tabak/Podonki&Aнархия/1.jpg",
@@ -105,10 +45,7 @@
       "productOptionImage": ["./Tabak/Podonki&Aнархия/1.jpg", "./Tabak/Podonki&Aнархия/2.jpg", "./Tabak/Podonki&Aнархия/3.jpg"],
 
       "typeOfProduct": [
-        { "id": 1, "type": "Клюква содовая" },
-        { "id": 2, "type": "Лимонный мармелад" },
-        { "id": 3, "type": "Манго лед" },
-        { "id": 4, "type": "Груша-кокос" }
+        { "id": 1, "type": "Тархун" }
       ],
       "moreDetails": "<span>Podonki&Aнархия </span>Жидкость PODONKI Анархия создана для тех, кто не боится переходить границы, быть смелым и бунтарским. Это сочетание сладкого и кислого со взрывными фруктовыми нотками, которое позволит вам ощутить настоящий вкус свободы.<p><span> Крепость: </span> 70 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
     },
@@ -137,9 +74,7 @@
       "productOptionImage": ["./Tabak/Blood/1.jpg", "./Tabak/Blood/2.jpg", "./Tabak/Blood/3.jpg"],
 
       "typeOfProduct": [
-        { "id": 1, "type": "Сочный манго" },
-        { "id": 2, "type": "Чёрная смородина" },
-        { "id": 3, "type": "Малина гранат" }
+        { "id": 1, "type": "Сладкий манго" }
       ],
       "moreDetails": "<span>BLOOD </span>монстрический вид, монстрический вкус, монстричесий жмых. Это все про эту линейку. <p><span> Крепость: </span> 60 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
     },
@@ -151,11 +86,10 @@
       "productOptionImage": ["./Tabak/Duall/1.jpg", "./Tabak/Duall/2.jpg", "./Tabak/Duall/3.jpg"],
 
       "typeOfProduct": [
-        { "id": 2, "type": "Морозный редбулл" },
+        { "id": 2, "type": "Киви-гуава" },
         { "id": 3, "type": "Личи гуава" },
         { "id": 4, "type": "Холодная смородина" },
-        { "id": 5, "type": "Манго кумкват" },
-        { "id": 6, "type": "Морозный виноград" }
+        { "id": 5, "type": "Манго кумкват" }
       ],
       "moreDetails": "<span>DUALL </span>жижа, которая перевернет понимание о яркости вкуса в жидкостях. Максимальная насыщенность вкуса - вот что обозначает EXTRA в данной линейке!<p><span> Крепость: </span> 50 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
     },
@@ -167,7 +101,6 @@
       "productOptionImage": ["./Tabak/Sabotage/1.jpg", "./Tabak/Sabotage/2.jpg", "./Tabak/Sabotage/3.jpg"],
 
       "typeOfProduct": [
-        { "id": 1, "type": "Малина" },
         { "id": 2, "type": "Кумкват-бергамот" },
         { "id": 3, "type": "Груша-клубника" },
         { "id": 4, "type": "Гранат" },
@@ -175,19 +108,6 @@
         { "id": 6, "type": "Кокос-печенье" }
       ],
       "moreDetails": "<span>Sabotage </span> это продукт, разработанный специально для современных POS-систем, представленный одним из ведущих производителей на российском рынке, Taboo Production. Она отличается высоким качеством производства и ароматизаторов, что гарантирует насыщенные и приятные вкусы. <p><span> Крепость: </span> 20 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
-    },
-    {
-      "id": 11,
-      "img": "./Tabak/Mad/1.jpg",
-      "title": "Mad",
-      "price": 15,
-      "productOptionImage": ["./Tabak/Mad/1.jpg", "./Tabak/Mad/2.jpg", "./Tabak/Mad/3.jpg"],
-
-      "typeOfProduct": [
-        { "id": 1, "type": "Киви-ананас" },
-        { "id": 2, "type": "Ледяной манго" }
-      ],
-      "moreDetails": "<span>MAD </span>легендарная жижа, которая навела шума ранее, сейчас она просто хороша.  <p><span> Крепость: </span> 60 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
     },
     {
       "id": 12,
@@ -232,8 +152,6 @@
       "productOptionImage": ["./Tabak/Podonki V1/1.jpg", "./Tabak/Podonki V1/2.jpg", "./Tabak/Podonki V1/3.jpg"],
   
       "typeOfProduct": [
-        { "id": 1, "type": "Бабблгам с арбузом и мятой" },
-        { "id": 2, "type": "Черника-малина-мята-лед" },
         { "id": 3, "type": "Брусника-клюква-малина" },
         { "id": 4, "type": "Малиново-клубничная жвачка" },
         { "id": 5, "type": "Ледяной личи-виноград-мята" }
@@ -249,7 +167,6 @@
   
       "typeOfProduct": [
         { "id": 1, "type": "Ананасовый энергетик" },
-        { "id": 2, "type": "Виноградно-кактусовая жвачка" },
         { "id": 3, "type": "Клубничное мороженное" }
       ],
       "moreDetails": "<span>PODONKI V2 </span>Неординарные личности. Освежающие жидкости — один из главных трендов лета. Множество парильщиков тратят время на поиски простых, но культовых сочетаний, которые помогут пережить с комфортом жаркие деньки. <p><span> Крепость: </span> 60 мг</p><p> <span>Объем жидкости:</span> 30 мл</p><p> <span>Никотин:</span> солевой</p> "
@@ -276,7 +193,6 @@
   
       "typeOfProduct": [
         { "id": 1, "type": "Ананас" },
-        { "id": 2, "type": "Апельсин" },
         { "id": 3, "type": "Лимон-лайм" },
         { "id": 4, "type": "Киви-яблоко" },
         { "id": 5, "type": "Малина-смородина" },
@@ -295,7 +211,6 @@
       "productOptionImage": ["./Tabak/Злая Монашка/1.jpg", "./Tabak/Злая Монашка/2.jpg","./Tabak/Злая Монашка/3.jpg"],
   
       "typeOfProduct": [
-        { "id": 1, "type": "Энергетик-вишня-лед" },
         { "id": 2, "type": "Ягодный морс" },
         { "id": 3, "type": "Энергетик-виноград-лед" },
         { "id": 4, "type": "Малиновое варенье" },
@@ -314,7 +229,6 @@
   
       "typeOfProduct": [
         { "id": 1, "type": "Кола-имбирь-лайм" },
-        { "id": 2, "type": "Йогурт-черника-лаванда" },
         { "id": 3, "type": "Лимонад-личи-базилик" },
         { "id": 4, "type": "Черный чай с персиком-жасмин" }
       ],
@@ -537,9 +451,12 @@
       "price": 12,
       "productOptionImage": ["./Stick/VOOPOO/1.jpg", "./Stick/VOOPOO/2.jpg", "./Stick/VOOPOO/3.jpg"],
       "typeOfProduct": [
-        { "id": 1, "type": "Испаритель Pasik K1" }
+        { "id": 1, "type": "Картридж для VOOPOO VMATE" }
       ],
       "moreDetails": "<span>Картридж для VOOPOO VMATE</span> "
     }
+  ],
+  "snus": [
+   
   ]
 }

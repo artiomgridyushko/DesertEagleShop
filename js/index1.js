@@ -115,11 +115,12 @@ const swiperBanner = new Swiper('.swiper_baner', {
 const fetchData = async () => {
   try {
     const response = await fetch('./dataProduct/dataProduct.json');
-    const { eSigs, chewingGum, iqos, sticks } = await response.json();
+    const { eSigs, chewingGum, iqos, sticks, snus } = await response.json();
     const eSigsBlock = document.querySelector('#eSigs');
     const chewingGumBlock = document.querySelector('#chewingGum');
     const iqosBlock = document.querySelector('#iqos');
     const sticksBlock = document.querySelector('#sticks');
+    const snusBlock = document.querySelector('#snus');
 
     const HTMLTemplate = (idElement, data) => {
       for (let product of data) {
@@ -151,6 +152,7 @@ const fetchData = async () => {
     HTMLTemplate(chewingGumBlock, chewingGum);
     HTMLTemplate(iqosBlock, iqos);
     HTMLTemplate(sticksBlock, sticks);
+    HTMLTemplate(snusBlock, snus);
 
     const test_product_data = document.querySelectorAll('.product-btn');
     test_product_data.forEach((el) => {
@@ -258,6 +260,13 @@ const fetchData = async () => {
       },
       breakpoints: swiperBreakpoits
     });
+    const snusSticksBlock = new Swiper('.snusBlock', {
+      ...swiperDefultSetting,
+      navigation: {
+        nextEl: '#snusBlocknexBtn'
+      },
+      breakpoints: swiperBreakpoits
+    });
     const reviws = document.querySelector('.reviews');
     const reviewsSwiper_Block = new Swiper(reviws, {
       slidesPerView: 3,
@@ -322,7 +331,7 @@ const fetchData = async () => {
     // console.log(reviewsSwiper_Block.isBeginning);
     // console.log(reviewsSwiper_Block.isEnd);
 
-    return { eSigs, chewingGum, iqos, sticks };
+    return { eSigs, chewingGum, iqos, sticks, snus };
   } catch (error) {
     console.error('Error fetching data:', error);
   }
