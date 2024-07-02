@@ -457,6 +457,81 @@
     }
   ],
   "snus": [
-   
+    {
+      "id": 7,
+      "img": "./snus/Faff/1.jpg",
+      "title": "Faff",
+      "price": 20,
+      "productOptionImage": ["./snus/Faff/1.jpg", "./snus/Faff/2.jpg", "./snus/Faff/3.jpg"],
+      "typeOfProduct": [
+        { "id": 1, "type": "Яблочки в никотине" },
+        { "id": 1, "type": "Дыня" },
+        { "id": 1, "type": "Кола" },
+        { "id": 1, "type": "Мята" },
+        { "id": 1, "type": "Энергетики" }
+      ],
+      "moreDetails": "<span></span> "
+    },
+    {
+      "id": 7,
+      "img": "./snus/Futurama/1.jpg",
+      "title": "Futurama",
+      "price": 20,
+      "productOptionImage": ["./snus/Futurama/1.jpg", "./snus/Futurama/1.jpg", "./snus/Futurama/1.jpg"],
+      "typeOfProduct": [
+        { "id": 1, "type": "Редбулл" },
+        { "id": 1, "type": "Сладкая мята" }
+      ],
+      "moreDetails": "<span></span> "
+    },
+    {
+      "id": 7,
+      "img": "./snus/The simpsons/1.jpg",
+      "title": "The simpsons",
+      "price": 20,
+      "productOptionImage": ["./snus/The simpsons/1.jpg", "./snus/The simpsons/2.jpg", "./snus/The simpsons/1.jpg"],
+      "typeOfProduct": [
+        { "id": 1, "type": "Зелёный чай-лимон-бергамот" },
+        { "id": 1, "type": "Кактус-лайм" },
+        { "id": 1, "type": "Свежий мандарин" }
+      ],
+      "moreDetails": "<span></span> "
+    },
+    {
+      "id": 7,
+      "img": "./snus/Fave/1.jpg",
+      "title": "Fave",
+      "price": 15,
+      "productOptionImage": ["./snus/Fave/1.jpg", "./snus/Fave/2.jpg", "./snus/Fave/3.jpg"],
+      "typeOfProduct": [
+        { "id": 1, "type": "Тропический микс" },
+        { "id": 1, "type": "Вишня" },
+        { "id": 1, "type": "Лимон" }
+      ],
+      "moreDetails": "<span></span> "
+    },
+    {
+      "id": 7,
+      "img": "./snus/Bonum/1.jpg",
+      "title": "Bonum",
+      "price": 15,
+      "productOptionImage": ["./snus/Bonum/1.jpg", "./snus/Bonum/2.jpg", "./snus/Bonum/1.jpg"],
+      "typeOfProduct": [
+        { "id": 1, "type": "Классик" }
+      ],
+      "moreDetails": "<span></span> "
+    },
+    {
+      "id": 7,
+      "img": "./snus/Poek/1.jpg",
+      "title": "Poek",
+      "price": 15,
+      "productOptionImage": ["./snus/Poek/1.jpg", "./snus/Poek/2.jpg", "./snus/Poek/1.jpg"],
+      "typeOfProduct": [
+        { "id": 1, "type": "Кофе" },
+        { "id": 1, "type": "Арбуз" }
+      ],
+      "moreDetails": "<span></span> "
+    }
   ]
 }

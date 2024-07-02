@@ -476,6 +476,30 @@ const calculatePrice = (type, quantity, title) => {
   }
 
 
+  if (title === 'Poek') {
+    price = 15;
+  }
+
+  if (title === 'Bonum') {
+    price = 15;
+  }
+
+  if (title === 'Fave') {
+    price = 15;
+  }
+
+  if (title === 'The simpsons') {
+    price = 20;
+  }
+
+  if (title === 'Futurama') {
+    price = 20;
+  }
+
+  if (title === 'Faff') {
+    price = 20;
+  }
+
   // console.log("Price for", type, "with quantity", quantity, "and title", title, "is", price);
   return price;
 };
@@ -692,6 +716,30 @@ if (title === 'Испаритель PnP 0.15 om') {
   price = 12;
 }
 
+
+if (title === 'Poek') {
+  price = 15;
+}
+
+if (title === 'Bonum') {
+  price = 15;
+}
+
+if (title === 'Fave') {
+  price = 15;
+}
+
+if (title === 'The simpsons') {
+  price = 20;
+}
+
+if (title === 'Futurama') {
+  price = 20;
+}
+
+if (title === 'Faff') {
+  price = 20;
+}
 
     // console.log("Price for", type, "with quantity", quantity, "and title", title, "is", price);
     return price;
